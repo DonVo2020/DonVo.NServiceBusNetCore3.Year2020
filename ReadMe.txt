@@ -15,4 +15,8 @@
 07.  Create NServiceBus2020.BankTransactionsService project.
 	Install NuGet package:  NServiceBus.Serilog
 	Install NuGet package:  Serilog.Settings.Configuration
-
+08.  Create NServiceBus2020.BankTransactions.UnitTests project.
+	Install NuGet package:  NServiceBus.Testing
+	Install NuGet package:  AutoFixture.AutoMoq
+	Install NuGet package:  Machine.Specifications.Should
+09.  Create NServiceBus2020.ATMMachineClient project.
