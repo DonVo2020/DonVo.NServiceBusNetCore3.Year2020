@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NServiceBus2020.DomainBase\NServiceBus2020.DomainBase.csproj" />
+    <ProjectReference Include="..\NServiceBus2020.MessageBase\NServiceBus2020.MessageBase.csproj" />
+  </ItemGroup>
+
+</Project>

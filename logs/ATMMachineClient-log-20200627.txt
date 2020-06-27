@@ -1,0 +1,104 @@
+2020-06-27 14:27:38.359 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Activating persistence 'LearningPersistence' to provide storage for 'NServiceBus.StorageType+Sagas' storage.
+2020-06-27 14:27:38.537 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Initializing type: NServiceBus2020.Domain.Events.BankCardCreated, NServiceBus2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-06-27 14:27:38.555 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Initializing type: NServiceBus2020.Messages.Messages.WithDrawReponse, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-06-27 14:27:38.557 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Number of messages found: 2
+2020-06-27 14:27:38.558 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Message definitions: 
+NServiceBus2020.Domain.Events.BankCardCreated
+NServiceBus2020.Messages.Messages.WithDrawReponse
+2020-06-27 14:27:38.569 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Looking for license in the following locations:
+License not found in C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\NServiceBus2020.ATMMachineClient\bin\Debug\netcoreapp3.1\license.xml
+License not found in C:\Users\dungh\AppData\Local\ParticularSoftware\license.xml
+License not found in C:\ProgramData\ParticularSoftware\license.xml
+No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-06-27 14:27:38.604 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Associated 'NServiceBus2020.Domain.Events.BankCardCreated' message with 'NServiceBus2020.ATMMachineClient.CashCardCreatedMessageHandler' handler.
+2020-06-27 14:27:38.605 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Associated 'NServiceBus2020.Messages.Messages.WithDrawReponse' message with 'NServiceBus2020.ATMMachineClient.WithDrawReponseMessageHandler' handler.
+2020-06-27 14:27:38.783 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Auto subscribed to event NServiceBus2020.Domain.Events.BankCardCreated
+2020-06-27 14:27:38.786 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Receiver Main is starting, listening to queue NServiceBus2020.ATMMachineClient.Client.
+2020-06-27 14:27:38.814 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Started polling for new messages in C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\.learningtransport\NServiceBus2020.ATMMachineClient.Client
+2020-06-27 14:27:52.655 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Serializing message 'NServiceBus2020.Messages.Commands.RequestBankCard, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' with id 'ac58ee05-6d7e-4c6f-ba1f-abe701513f21', ToString() of the message yields: NServiceBus2020.Messages.Commands.RequestBankCard
+2020-06-27 14:27:52.724 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Initializing type: NServiceBus2020.Messages.Commands.RequestBankCard, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-06-27 14:27:52.796 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Destination: NServiceBus2020.BankTransactionsService
+Message headers:
+NServiceBus.MessageId : ac58ee05-6d7e-4c6f-ba1f-abe701513f21
+NServiceBus.MessageIntent : Send
+NServiceBus.ConversationId : e4eb350c-0cf6-4bb2-90ff-abe701513f22
+NServiceBus.CorrelationId : ac58ee05-6d7e-4c6f-ba1f-abe701513f21
+NServiceBus.ReplyToAddress : NServiceBus2020.ATMMachineClient.Client
+NServiceBus.OriginatingMachine : DONVO
+NServiceBus.OriginatingEndpoint : NServiceBus2020.ATMMachineClient.Client
+$.diagnostics.originating.hostid : a560e7edc64e632b2beb9620cf1bdf0f
+NServiceBus.ContentType : text/xml
+NServiceBus.EnclosedMessageTypes : NServiceBus2020.Messages.Commands.RequestBankCard, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;NServiceBus2020.Messages.BusMessage, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+NServiceBus.Version : 7.3.0
+NServiceBus.TimeSent : 2020-06-27 20:27:52:789797 Z
+
+2020-06-27 14:27:53.854 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Processing message type: NServiceBus2020.Domain.Events.BankCardCreated
+Message headers:
+NServiceBus.MessageId : 06a2e4c7-da11-4f27-ad58-abe701514047
+NServiceBus.MessageIntent : Publish
+NServiceBus.ConversationId : 67972429-d24d-4345-9bc0-abe701514048
+NServiceBus.CorrelationId : 06a2e4c7-da11-4f27-ad58-abe701514047
+NServiceBus.ReplyToAddress : NServiceBus2020.BankTransactionsService
+NServiceBus.OriginatingMachine : DONVO
+NServiceBus.OriginatingEndpoint : NServiceBus2020.BankTransactionsService
+$.diagnostics.originating.hostid : 505ebcb8c510338e9859f13749a1c6ee
+NServiceBus.ContentType : text/xml
+NServiceBus.EnclosedMessageTypes : NServiceBus2020.Domain.Events.BankCardCreated, NServiceBus2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+NServiceBus.Version : 7.3.0
+NServiceBus.TimeSent : 2020-06-27 20:27:53:656966 Z
+Handlers to invoke:
+NServiceBus2020.ATMMachineClient.CashCardCreatedMessageHandler
+2020-06-27 14:27:53.866 -06:00 [INF] NServiceBus2020.ATMMachineClient.Client/ () bank card 2608107630149982 has been sent out in the virtual post
+2020-06-27 14:27:53.879 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Completing processing for C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\.learningtransport\NServiceBus2020.ATMMachineClient.Client\58e65730-079e-4c04-a5a1-619dd0afe831.metadata.txt(C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\.learningtransport\NServiceBus2020.ATMMachineClient.Client\.pending\083b0c28-3a87-45af-a4c2-c74429234c72\58e65730-079e-4c04-a5a1-619dd0afe831.metadata.txt).
+2020-06-27 14:28:08.644 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Serializing message 'NServiceBus2020.Messages.Commands.DepositMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' with id 'd61856a0-f68e-4106-a91b-abe7015151e3', ToString() of the message yields: NServiceBus2020.Messages.Commands.DepositMoney
+2020-06-27 14:28:08.644 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Initializing type: NServiceBus2020.Messages.Commands.DepositMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-06-27 14:28:08.647 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Destination: NServiceBus2020.BankTransactionsService
+Message headers:
+NServiceBus.MessageId : d61856a0-f68e-4106-a91b-abe7015151e3
+NServiceBus.MessageIntent : Send
+NServiceBus.ConversationId : de82b3cb-adcb-4a9e-8d67-abe7015151e3
+NServiceBus.CorrelationId : d61856a0-f68e-4106-a91b-abe7015151e3
+NServiceBus.ReplyToAddress : NServiceBus2020.ATMMachineClient.Client
+NServiceBus.OriginatingMachine : DONVO
+NServiceBus.OriginatingEndpoint : NServiceBus2020.ATMMachineClient.Client
+$.diagnostics.originating.hostid : a560e7edc64e632b2beb9620cf1bdf0f
+NServiceBus.ContentType : text/xml
+NServiceBus.EnclosedMessageTypes : NServiceBus2020.Messages.Commands.DepositMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;NServiceBus2020.Messages.BusMessage, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+NServiceBus.Version : 7.3.0
+NServiceBus.TimeSent : 2020-06-27 20:28:08:646993 Z
+
+2020-06-27 14:28:23.156 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Serializing message 'NServiceBus2020.Messages.Commands.WithdrawMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' with id '3c6dfb6a-da20-490a-9e89-abe7015162e4', ToString() of the message yields: NServiceBus2020.Messages.Commands.WithdrawMoney
+2020-06-27 14:28:23.156 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Initializing type: NServiceBus2020.Messages.Commands.WithdrawMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-06-27 14:28:23.161 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Destination: NServiceBus2020.BankTransactionsService
+Message headers:
+NServiceBus.MessageId : 3c6dfb6a-da20-490a-9e89-abe7015162e4
+NServiceBus.MessageIntent : Send
+NServiceBus.ConversationId : 73ab974d-1a2b-438f-ae5d-abe7015162e4
+NServiceBus.CorrelationId : 3c6dfb6a-da20-490a-9e89-abe7015162e4
+NServiceBus.ReplyToAddress : NServiceBus2020.ATMMachineClient.Client
+NServiceBus.OriginatingMachine : DONVO
+NServiceBus.OriginatingEndpoint : NServiceBus2020.ATMMachineClient.Client
+$.diagnostics.originating.hostid : a560e7edc64e632b2beb9620cf1bdf0f
+NServiceBus.ContentType : text/xml
+NServiceBus.EnclosedMessageTypes : NServiceBus2020.Messages.Commands.WithdrawMoney, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;NServiceBus2020.Messages.BusMessage, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+NServiceBus.Version : 7.3.0
+NServiceBus.TimeSent : 2020-06-27 20:28:23:161213 Z
+
+2020-06-27 14:28:23.240 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Processing message type: NServiceBus2020.Messages.Messages.WithDrawReponse
+Message headers:
+NServiceBus.MessageId : 86358780-13fb-4424-8139-abe7015162f3
+NServiceBus.MessageIntent : Reply
+NServiceBus.RelatedTo : 3c6dfb6a-da20-490a-9e89-abe7015162e4
+NServiceBus.ConversationId : 73ab974d-1a2b-438f-ae5d-abe7015162e4
+NServiceBus.CorrelationId : 3c6dfb6a-da20-490a-9e89-abe7015162e4
+NServiceBus.ReplyToAddress : NServiceBus2020.BankTransactionsService
+NServiceBus.OriginatingMachine : DONVO
+NServiceBus.OriginatingEndpoint : NServiceBus2020.BankTransactionsService
+$.diagnostics.originating.hostid : 505ebcb8c510338e9859f13749a1c6ee
+NServiceBus.ContentType : text/xml
+NServiceBus.EnclosedMessageTypes : NServiceBus2020.Messages.Messages.WithDrawReponse, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;NServiceBus2020.Messages.BusMessage, NServiceBus2020.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+NServiceBus.Version : 7.3.0
+NServiceBus.TimeSent : 2020-06-27 20:28:23:211923 Z
+Handlers to invoke:
+NServiceBus2020.ATMMachineClient.WithDrawReponseMessageHandler
+2020-06-27 14:28:23.251 -06:00 [DBG] NServiceBus2020.ATMMachineClient.Client/ () Completing processing for C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\.learningtransport\NServiceBus2020.ATMMachineClient.Client\b6af46b2-55fb-47ef-b09a-38caa0418593.metadata.txt(C:\NServiceBus\DonVo.NServiceBusNetCore3.Year2020\.learningtransport\NServiceBus2020.ATMMachineClient.Client\.pending\af85515d-514b-47dd-acbf-f8a8c97f3146\b6af46b2-55fb-47ef-b09a-38caa0418593.metadata.txt).

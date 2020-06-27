@@ -1,0 +1,8 @@
+2020-06-27 10:28:18.331 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (1) No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-06-27 10:30:39.445 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (1) No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-06-27 14:07:30.736 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (1) No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-06-27 14:07:36.812 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (9) Initiating shutdown.
+2020-06-27 14:07:36.825 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (9) Shutdown complete.
+2020-06-27 14:27:38.512 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (1) No valid license could be found. Falling back to trial license with start date '2020-06-21'.
+2020-06-27 14:28:08.710 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (5) card 2608107630149982 balance is now 999
+2020-06-27 14:28:23.203 -06:00 [INF] NServiceBus2020.BankTransactionsService/DONVO (5) card 2608107630149982 balance is now 900
